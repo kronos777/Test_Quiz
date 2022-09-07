@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="Добавить группу учеников"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="80dp"
+            android:layout_height="7dp"
+            android:layout_below="@+id/textview1"
+            android:layout_alignStart="@id/textview1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"></View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card2"
+            android:visibility="visible"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/View1"
+            android:padding="20dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="7dp"
+            android:background="@drawable/circular_card"
+            app:cardCornerRadius="7dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingTop="25dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="25dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/lato_black"
+                    android:text="имя группы учеников"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/nameUsers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:hint="имя группы учеников"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/lato_black"
+                    android:text="Группы вопросов для учеников"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/user_qustions"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:hint="Группы вопросов для учеников"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btn_addgroup"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/lato_black"
+                    android:gravity="center"
+                    android:onClick="addUsersGoup"
+                    android:text="Добавить"
+                    android:textColor="#ffff" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loader1"
+                style="@style/AVLoadingIndicatorView.Large"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="10dp"
+                android:visibility="gone"
+                app:indicatorColor="@android:color/holo_orange_light"
+                android:layout_gravity="center|top"
+                app:indicatorName="BallScaleMultipleIndicator" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

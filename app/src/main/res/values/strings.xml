@@ -1,0 +1,53 @@
+<resources>
+    <string name="text">"Инструкция по применению"</string>
+
+    <string name="app_name">Учись дома</string>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+    <string name="nav_header_desc">Заголовок навигации</string>
+    <string name="action_settings">Настройки</string>
+    <string name="email_unverified">Подтверждение адреса электронной почты не выполнено. Проверьте свою электронную почту..</string>
+    <string name="email_sent">Письмо с подтверждением отправлено. Проверьте свою электронную почту.</string>
+    <string name="Welcome">С возвращением, Пользователь</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Пароль слишком короткий, введите минимум 6 символов!</string>
+    <string name="auth_failed">Ошибка аутентификации, проверьте свою электронную почту и пароль или зарегистрируйтесь</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="btn_login">АВТОРИЗОВАТЬСЯ</string>
+    <string name="btn_link_to_register">Войти сейчас!</string>
+    <string name="btn_link_to_login">Уже зарегистрирован! Авторизоваться</string>
+    <string name="btn_forgot_password">Забыли Ваш пароль?</string>
+    <string name="btn_reset_password">Сброс пароля</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="lbl_forgot_password">Забыл пароль?</string>
+    <string name="forgot_password_msg">Нам просто нужен ваш зарегистрированный адрес электронной почты, чтобы отправить вам инструкции по сбросу пароля.</string>
+    <string name="title_activity_tests">Задания</string>
+    <string name="Sign_in_login">Войти</string>
+    <string name="e_mail_text_view_login">E-MAIL</string>
+    <string name="e_mail_text_view_pass">Пароль</string>
+    <string name="remember_me">Запомните меня</string>
+    <string name="Sign_in_signup">Зарегистрироваться</string>
+    <string name="action_sign_in_btn">зарегистрироваться</string>
+    <string name="title_activity_UPdate">Обновить информацию</string>
+    <string-array name="College_Choice">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="Branch_Choice">
+        <item>IT</item>
+        <item>ECE</item>
+        <item>DUAl(IT+ECE)</item>
+    </string-array>
+    <string-array name="Sem_Choice">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+    </string-array>
+
+</resources>

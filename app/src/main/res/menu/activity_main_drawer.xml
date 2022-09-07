@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+    </group>
+    <item android:title="Аккаунт">
+        <menu>
+            <item
+                android:id="@+id/nav_details"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:font="@font/lato_black"
+                android:title="Детальная информация" />
+            <item
+                android:id="@+id/nav_respass"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:font="@font/lato_black"
+                android:title="Поменять пароль" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_menu_send"
+                android:font="@font/lato_black"
+                android:title="Выйти" />
+        </menu>
+    </item>
+    <item android:title="Информация">
+        <menu>
+            <item
+                android:id="@+id/about_details"
+                android:icon="@drawable/ic_info_outline_white_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="О нас" />
+            <item
+                android:id="@+id/feedback_id"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Обратная связь">
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/admin_adminMenuGroup"
+        android:title="Админ">
+        <menu>
+            <item
+                android:id="@+id/create_test"
+                android:icon="@android:drawable/ic_menu_add"
+                android:font="@font/lato_black"
+                android:visible="true"
+                android:title="Admin "/>
+            <item
+                android:id="@+id/create_tutor"
+                android:icon="@android:drawable/ic_menu_add"
+                android:font="@font/lato_black"
+                android:visible="true"
+                android:title="Добавить тьютора"/>
+            <item
+                android:id="@+id/create_group"
+                android:icon="@android:drawable/ic_menu_add"
+                android:font="@font/lato_black"
+                android:visible="true"
+                android:title="Добавить группу"/>
+            <item
+                android:id="@+id/tutor_activity"
+                android:icon="@drawable/ic_appicon"
+                android:font="@font/lato_black"
+                android:visible="true"
+                android:title="Тьютор"/>
+            <item
+                android:id="@+id/admin_addStudent"
+                android:icon="@drawable/ic_info_outline_white_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Добавить учеников" />
+            <item
+                android:id="@+id/nav_test"
+                android:icon="@drawable/ic_test_icon"
+                android:font="@font/lato_black"
+                android:iconTint="@android:color/black"
+                android:title="Задания" />
+            <item
+                android:id="@+id/nav_result"
+                android:icon="@drawable/ranking"
+                android:font="@font/lato_black"
+                android:title="Результаты" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/tutors_tutorMenuGroup"
+        android:title="Тьютор">
+        <menu>
+            <item
+                android:id="@+id/tutors_groupQuery"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Мои группы вопросы">
+            </item>
+            <item
+                android:id="@+id/tutors_questionsadd"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Добавить тесты">
+            </item>
+            <item
+                android:id="@+id/tutors_questionsaddsimple"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Добавить вопросы текст">
+            </item>
+            <item
+                android:id="@+id/tutors_groupStudent"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Группы учеников">
+            </item>
+            <item
+                android:id="@+id/tutors_addStudent"
+                android:icon="@drawable/ic_info_outline_white_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Добавить учеников" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/tutors_studentsMenuGroup"
+        android:title="Ученик">
+        <menu>
+            <item
+                android:id="@+id/students_groupQuery"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Мои вопросы">
+            </item>
+            <item
+                android:id="@+id/students_myAnswers"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Мои ответы">
+            </item>
+        </menu>
+    </item>
+</menu>
